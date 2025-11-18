@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-size: cover;
+}
+/* para nao aparecer as barras de rolagem */
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+img {
+    width: 100vw;
+}
+a {
+/* para o ACESSE ficar abaixo da imagem */
+    display: block;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    /* melhor que usar STRONG */
+    font-weight: bolder;
+            padding: 20px 0px;
+}
+a:hover {
+    background-color: red;
+}
