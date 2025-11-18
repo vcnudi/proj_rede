@@ -12,9 +12,16 @@ html, body {
     background-color: black;
 }
 body {
-    background: url("../imagens/fundo-madeira.jpg") no-repeat top center;
+    background: url("../imagens/fundo-madeira.jpg")  no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+}
+header {
+    background-color: rgb(121, 52, 52);
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
 }
 main {
     height: 100vh;
@@ -26,32 +33,34 @@ section#telefone {
     left: 50%;
     transform: translate(-50%, -50%);
     background: url(../imagens/frame-iphone.png) no-repeat;
-    
-    height: 627px;
-    width: 311px;
+    background-size: cover;
+    height: 564px; /*627px;*/
+    width: 280px; /*311px;*/
 }
 iframe#tela {
     position: relative;
-    top: 79px;
-    left: 21px;
-    height: 473px;
-    width: 269px ;
+    top: 72px;
+    left: 19px;
+    height: 425px;
+    width: 242px ;
 }
 section#redes {
-    text-align: right;
-    padding-top: 30px;
-    padding-right: 20px;
+    text-align: center;
+    
    
 }
 section#redes >a >img {
-    width: 50px;
+    
+    position: relative;
+    width: 40px;
     border-radius: 50%;
-    margin: 10px;
+    margin: 20px 5px 0px 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
 }
 section#redes >a >img:hover {
-    border: 2px solid rgba(255, 255, 255, 0.432);
-    box-shadow: 2px 3px 10px rgba(255, 255, 255, 0.432);
-    transform: translate(-2px , -2px);
+    
+    /*border: 1px solid rgba(255, 255, 255, 0.432);*/
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.432);
+    transform: translate(-2px, -2px);
     transition: transform 0.5s;
    }  
